@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/* bootstrap を日本語フォントで上書き */
+html , body ,
+.popover , .tooltip {
+    font-family: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+}
+body{
+    color: #000;
+    font-size: 16px;
+}
+
+/* 明朝体 */
+.mincho {
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "ＭＳ 明朝", serif;    
+}
+
+/* 画像リンクのhover時にエフェクトを実施 */
+a:hover img {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+}
+
+/* テーマカラーのボタン */
+.btn-theme,
+.btn-theme:focus,.btn-theme.focus,
+.btn-theme:active,.btn-theme.active {
+  color: #fff;
+  background-color: #64bdd4;
+  border-color: #5aaabe;
+}
+.btn-theme:hover {
+  background-color: #83cadc;
+}
+
+/* ナビ */
+.navbar {
+    padding-top: 10px;
+    margin-bottom: 0;
+    border: none;
+    box-shadow: none;  
+    -webkit-box-shadow: none;
+}
+.navbar-brand {
+    padding: 0px;
+}
+.navbar-brand > img {
+    width: 250px;
+    height: 100%;  
+    padding: 15px;
+}
+.navbar-toggle {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.navbar-toggle span.hamburger-text {
+    margin-left: -8px;
+}
+@media screen and (max-width: 320px) {
+    .navbar-brand > img {
+        width: 200px;
+        height: 100%;   
+    }
+}
+/* ナビゲーションの透明化 */
+.navbar-default.navbar-transparent {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
+.navbar-default.navbar-transparent .navbar-nav > li > a {
+    color: #000;
+}
+.navbar-default.navbar-transparent .navbar-nav > li > a:hover,
+.navbar-default.navbar-transparent .navbar-nav > li > a:focus {
+  color: #000;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+/* フッター */
+footer{
+    background-color: #212121;
+}
+#footermenu {
+    font-size: 14px;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+#footermenu ul.list-inline{
+    margin:0;
+}
+#footermenu ul.list-inline > li{
+    vertical-align: top;
+}
+#footermenu ul.list-inline > li > p{    
+    margin-bottom: 0;
+}
+#footermenu ul.list-inline > li > p > i.glyphicon{
+    color: #757575;
+    font-size: 1rem;
+}
+#footermenu ul.list-inline > li > ul{
+    list-style: none;
+    padding-left: 1rem;
+    color: #9E9E9E;
+}
+#footermenu ul.list-inline > li > p > a,
+#footermenu ul.list-inline > li > ul > li > a,
+#footermenu ul.list-inline > li > ul > li > a:hover {
+    color: #fff;
+}
+#footerlogo{
+    text-align: right;
+    margin-bottom: 3rem;
+}
+#footerlogo > p.copyright{
+    color: #757575;
+    margin-bottom: 0;
+}
+/* モバイル用フッター */
+#footermenumobile > .list-group-item {
+    text-align: center;
+    background-color: #212121;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #424242;
+    color: #fff;
+}
+#footermenumobile > a.list-group-item:hover,
+#footermenumobile > a.list-group-item:focus {
+  text-decoration: underline;
+}
+#footermenumobile > div.list-group-item {
+    border: none;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: #757575;
+}

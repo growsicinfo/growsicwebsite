@@ -1,0 +1,291 @@
+@charset "utf-8";
+/* グレー背景 */
+.bg-gray{
+    background-color: #ECF0F1;
+}
+.bg-padding{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+/* タイトル */
+.heading{
+    box-sizing: content-box;
+    text-align: center;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+.heading > .title {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    color: #000;
+}
+.heading > .title > span.jp {
+    display: block;
+    font-size: 24px;
+    font-weight:700;
+}
+.heading > .title > span.en {
+    display: flex;
+    align-items: center;
+    text-align: center; /* for no-flexbox browsers */
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+.heading > .title > span.en:before,
+.heading > .title > span.en:after {
+    border-top: 1px solid #000;
+    content: "";
+    display: inline; /* for IE */
+    flex-grow: 1;
+}
+.heading > .title > span.en:before {
+    margin-right: 0.5em;
+}
+.heading > .title > span.en:after {
+    margin-left: 0.5em;
+}
+
+
+/* イメージ */
+#toppage header{
+    background: url('../img/pic/index/tokyo-1121870_1920.img.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*background-attachment: fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* イメージエリア */
+#toppage header #topimagearea > div{
+    padding: 20vh 5vw;
+}
+#toppage header #topimagearea > div > img.img-responsive {
+  display: block;
+  margin: 0 auto;
+  margin-left: auto;/* 必須 中央揃え*/
+  margin-right: auto;/* 必須 中央揃え*/
+}
+#toppage header #topimagearea > div > p {
+    background-color: rgba(100, 189, 212,0.7); /* #64bdd4 theme color*/
+    text-align: center;
+    color: white;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 2rem 1rem;
+    font-size: 2rem;
+    
+}
+/* スマホ時のフォントサイズ */
+@media (max-width: 768px) {
+    #toppage header #topimagearea > div > p{
+        font-size: 16px;
+    }
+}
+
+/* 経営理念 */
+#keieiarea {
+    background-image: url("../img/pic/index/grid.gif");
+    background-repeat: repeat;
+    padding: 15vh 5vw;
+    color: #424242;
+}
+#keieiarea .rinen-title{
+    float: right !important; /* PC時は右寄せ */
+}
+#keieiarea .rinen{
+    font-size: 16px;
+    line-height: 3.5rem;
+    padding-right: 3rem;
+}
+#keieiarea .rinen-signature {
+    display: block;
+    margin-top: 3rem;
+    text-align: right;
+}
+
+/* スマホ時 */
+@media (max-width: 768px) {
+    #keieiarea .rinen-title{
+        float:none  !important;
+        margin-bottom: 5rem;
+    }
+    #keieiarea .rinen{
+        line-height: 2.8rem;
+        padding-right: 0;
+    }
+}
+
+
+/* ニュース */
+#newsarea ul {
+    margin: 0;
+    border-bottom: 1px solid #ffffff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;   
+}
+#newsarea .label{
+    background-color: #64bdd4; /*theme color*/
+}
+/* ニュース 日付 */
+#newsarea ul > li:first-child{
+    color: #424242;
+    font-size: 14px;
+}
+/* ニュース 本文 */
+#newsarea ul > li:nth-child(3){
+    /*font-size: 1.5rem;*/
+}
+
+
+
+
+
+/* グロウエスアイシーからのお知らせ */
+#topicarea a.card {
+    color: inherit;
+    margin-bottom: 3rem;
+    border: none;
+    max-width: 300px;
+}
+#topicarea a.card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    text-decoration: none;
+}
+#topicarea a.card .card-title,
+#topicarea a.card .card-text {
+        color: #000;
+}
+#topicarea a.card .card-block{
+    background-color:  #f7f9f9;
+}
+#topicarea .card-img-top{
+    background: url('../img/pic/index/calculator-385506_300x200.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*background-attachment: fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* スマホ時はカード画像を横並びにする*/
+@media (max-width: 768px) {
+    #topicarea a.card {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: row;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+                  
+        max-width: none; /* init */
+        
+    }
+    #topicarea a.card .card-img-top{
+        max-height: 150px;
+        height: auto;
+        width: 100px;
+    }
+    #topicarea a.card .card-title{
+        font-size: 16px;
+    }
+    #topicarea a.card .card-text{
+        font-size: 14px;
+    }
+}
+
+
+/* アクセスマップ */
+
+#maparea .address{
+    padding-top: 3rem;
+}
+#maparea .address .heading{
+    padding-bottom: 1rem;
+}
+
+#maparea .address > a {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#maparea .address > a > i{
+    color: #64bdd4; /*theme color*/
+}
+
+#googlemapapi > .col-sm-12 {
+	padding-left: 5vw;
+        padding-right: 5vw;
+}
+#googlemapapi #map-canvas {
+	width: 100% ;
+	height: 60vh ;
+}
+#googlemapapi #mappic {
+    margin-right: 3px;
+}
+
+@media (max-width: 768px) {
+    #googlemapapi > .col-sm-12{
+            padding-left: 0 ;
+            padding-right: 0;
+    }
+    #googlemapapi #map-canvas {
+            width: 100% ;
+            height: 70vh ;
+    }
+    
+}
+
+
+/* お問い合わせ */
+#contactarea {
+    text-align: center;
+}
+#contactarea{
+    background-image: url("../img/pic/index/skyscraper-1245909.edit.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#contactarea p {
+    margin-bottom: 0;
+}
+/* 丸形アイコン */
+#contactarea .circle-icon{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+#contactarea .circle-icon > .glyphicon {
+    background-color: #64bdd4; /*theme color*/
+    color: white;
+    padding: 25px;
+    font-size: 25px;
+    border-radius: 50%;
+}
+.contact-title {
+    font-size: 2rem;
+}
+.contact-body{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.contact-body > small{
+    font-size: 2rem;
+}
+.contact-description{
+    /*font-size: 1rem;*/
+}
+#contactmail .contact-body {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+

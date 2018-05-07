@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+/* 個別ページ　パンクズ */
+.breadcrumb > li + li:before {
+    font-family: 'Glyphicons Halflings';
+    content: "\e258";
+}
+.breadcrumb > .active,
+.breadcrumb > li,
+.breadcrumb > li + li:before {
+    color: #fff;
+}
+/* 個別ページ　ページタイトル */
+#pageheading {
+    background-color: #64bdd4;
+}
+#pageheading .breadcrumb {
+    background-color: inherit;
+    border-bottom: 1px solid #a0d7e5;
+}
+#pageheading h2 {
+    color: #fff;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+/*個別ページ　サブタイトル*/
+.sectionheading {
+    padding-left: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-left: 2px solid #64bdd4;
+    margin-bottom: 3rem;
+}
+
+/* スマホ時 */
+@media (max-width: 768px) {
+    #pageheading .breadcrumb {
+        font-size: 12px;
+    }
+    #pageheading h2 {
+        font-size: 20px;
+    }
+    .sectionheading{
+        font-size: 16px;
+    }
+}
+
+
+/* 会社概要ページ */
+
+/* 会社概要テーブル */
+#companyoverview > tbody > tr > th,
+#companyoverview > tbody > tr > td {
+    /*font-weight: normal;*/
+    padding: 2rem;
+    line-height: 1.846;
+    vertical-align: top;
+    border-top: 1px solid #fff;
+}
+@media (max-width: 768px) {
+    #companyoverview > tbody > tr > th,
+    #companyoverview > tbody > tr > td {
+        font-size: 12px;
+    }
+}
+
+#companyoverview > tbody > tr > th{
+    background-color: #ebeef0;
+}
+#companyoverview > tbody > tr > td{
+    background-color: #f2f4f5;
+}
+#companyoverview.table-bordered > tbody > tr > th,
+#companyoverview.table-bordered > tbody > tr > td{
+    border: 1px solid #dddddd;
+}
+
+/* 免責事項・個人情報保護方針 ページ*/
+
+/* 免責事項 */
+
+#disclaimerarea ul > li{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#personalinformationarea .toiawase{
+    padding: 2rem 3rem;
+    background-color: #ebeef0;
+}
+#personalinformationarea .toiawase > strong{
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+        
+}
+
+#personalinformationarea .table {
+   width: auto !important;
+}
+#personalinformationarea .table td {
+    padding-right: 5rem;
+}
+
+#personalinformationarea .h{
+    margin-bottom: 2rem;
+    color: #424242;
+}
+
+#personalinformationarea .b{
+    margin-bottom: 5rem;
+    padding-left: 1rem;
+    color: #616161;
+}
+#personalinformationarea .b > span{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    display: block;
+    font-size: 1.2em;
+}
+
+
+/* 業績ハイライト ページ*/
+
+/* 業績ハイライトテーブル */
+
+#performancehighlight .table{
+    margin-bottom: 3rem;
+}
+#performancehighlight .table-bordered > thead > tr > th,
+#performancehighlight .table-bordered > thead > tr > td {
+    border-bottom-width: 1px;
+}
+#performancehighlight .table-bordered > thead > tr > th,
+#performancehighlight .table-bordered > tbody > tr > th{
+    background-color: #f2f4f5;
+    font-weight: normal;
+}
+
+/* チャート画像　(中央揃え) */
+
+#performancehighlight canvas{
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+}
+#performancehighlight table tbody th i{
+    font-size: 1.2em;
+}
+
+/* 採用情報 */
+
+#employarea .text-muted {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    font-size: 3rem;
+}
+
+#employarea h5{
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+#employarea ul.list-unstyled{
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+}
+    
+
+@media (max-width: 768px) {
+    #employarea h5 {
+        font-size: 14px;
+    }
+    #employarea ul {
+        font-size: 12px;
+    }
+}
+
+
+/* #welfarearea */
+#welfarearea {
+    min-height: 50rem;
+}
