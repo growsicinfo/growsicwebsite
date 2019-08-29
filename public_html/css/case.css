@@ -121,6 +121,11 @@
     font-size: 1.2em;
 }
 
+#informationsecurityarea .table th,
+#informationsecurityarea .table td {
+  border:none;
+}
+
 
 /* 業績ハイライト ページ*/
 
