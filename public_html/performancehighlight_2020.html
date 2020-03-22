@@ -16,32 +16,32 @@
         <link href="css/case.css?v=20200322" rel="stylesheet">
         <title>株式会社グロウエスアイシー</title>
     </head>
-    <body>
+    <body id="performancehighlight">
         <!-- ナビ -->
         <header class="container-fluid">
             <div class="container">
                 <div class="row">
                     <nav class="navbar navbar-default ">
                         <div class="navbar-header">
-                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headnav">
-                            <span class="sr-only">navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="hamburger-text">menu</span>
-                          </button>
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headnav">
+                                <span class="sr-only">navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="hamburger-text">menu</span>
+                            </button>
                             <a class="navbar-brand" href="index.html">
                                 <img src="img/svg/logo.svg" alt="Logo">
                             </a>
                         </div>
                         <div class="collapse navbar-collapse" id="headnav">
-                          <ul class="nav navbar-nav navbar-right">
-                          <!--<ul class="nav navbar-nav">-->
-                            <li><a href="company.html">会社概要</a></li>
-                            <li><a href="employ.html">採用情報</a></li>
-                            <li><a href="disclaimer.html">免責事項</a></li>
-                            <li><a href="index.html#maparea">アクセスマップ</a></li>
-                          </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <!--<ul class="nav navbar-nav">-->
+                                <li><a href="company.html">会社概要</a></li>
+                                <li><a href="employ.html">採用情報</a></li>
+                                <li><a href="disclaimer.html">免責事項</a></li>
+                                <li><a href="index.html#maparea">アクセスマップ</a></li>
+                            </ul>
                         </div>
                     </nav>
                 </div>
@@ -54,9 +54,10 @@
                     <div class="col-sm-12">
                         <ol class="breadcrumb">
                             <li>Home</li>
-                            <li>福利厚生</li>
+                            <li>会社概要</li>
+                            <li>業績ハイライト</li>
                         </ol>
-                        <h2>福利厚生</h2>
+                        <h2>業績ハイライト</h2>
                     </div>
                 </div>
             </div>
@@ -64,22 +65,78 @@
         <!--コンテンツ-->
         <div class="container-fluid">
             <div class="container">
-
-                <div class="row" id="welfarearea">
+                <div class="row">
                     <div class="col-sm-12">
                         <h3 class="sectionheading">
-                            福利厚生に関する事項
+                            平成28年度～令和1年度の業績ハイライト
                         </h3>
-                        <ul>
-                            <li>組合健康保険（関東ITソフトウェア健康保険組合）、厚生年金、雇用保険、労働保険</li>
-                            <li>年次有給休暇、慶弔休暇、年末年始休暇、定期健康診断（１回／年）</li>
-                        </ul>
                     </div>
                 </div>
-                    
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="">単位：千円</p>
+                        <div style="overflow-x:auto;">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>28年度</th>
+                                        <th>29年度</th>
+                                        <th>30年度</th>
+                                        <th>令和1年度</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            <i class="glyphicon glyphicon-signal" style="color:rgba(19, 51, 166, 0.5)"></i>
+                                            売上高
+                                        </th>
+                                        <td>1,168,940</td>
+                                        <td>1,180,075</td>
+                                        <td>1,088,262</td>
+                                        <td>1,102,999</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <i class="glyphicon glyphicon-signal" style="color:rgba(252, 220, 93, 0.5)"></i>
+                                            営業利益
+                                        </th>
+                                        <td>8,724</td>
+                                        <td>3,511</td>
+                                        <td>4,826</td>
+                                        <td>1,291</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <i class="glyphicon glyphicon-signal" style="color:rgba(100, 189, 212, 0.5)"></i>
+                                            経常利益
+                                        </th>
+                                        <td>9,429</td>
+                                        <td>4,580</td>
+                                        <td>6,456</td>
+                                        <td>4,326</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div><!--row-->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <canvas id="chart04" ></canvas>
+                    </div>
+                    <div class="col-sm-6">
+                        <canvas id="chart01" ></canvas>
+                    </div>
+                    <div class="col-sm-6">
+                        <canvas id="chart02" ></canvas>
+                    </div>
+                </div>
+
             </div>
         </div>
-    <!--フッター-->
+        <!--フッター-->
         <footer class="container-fluid">
             <div class="container">
                 <div class="row">
@@ -161,9 +218,9 @@
                                 <a class="list-group-item" href="disclaimer.html">免責事項</a>
                                 <a class="list-group-item" href="index.html#maparea">お問い合わせ/アクセス</a>
                                 <div class="list-group-item">
-                                        <img src="img/svg/logo.white.svg" alt="Logo">
-                                        <br>
-                                        copyright &copy; growsic inc.
+                                    <img src="img/svg/logo.white.svg" alt="Logo">
+                                    <br>
+                                    copyright &copy; growsic inc.
                                 </div>
                             </div>
                         </div>
@@ -172,9 +229,13 @@
             </div>
         </footer>
 
-    <!-- include -->
-    <script src="jsplugin/jquery-1.10.2.min.js" type="text/javascript"></script>
-    <script src="jsplugin/bootstrap-3.3.6.min.js" type="text/javascript"></script>
+        <!-- include -->
+        <script src="jsplugin/jquery-1.10.2.min.js" type="text/javascript"></script>
+        <script src="jsplugin/bootstrap-3.3.6.min.js" type="text/javascript"></script>
+        <script src="jsplugin/Chart.min.js" type="text/javascript"></script>
+        <script src="js/performancehighlight.chart_2020.js" type="text/javascript"></script>
+        <script src="jsplugin/jquery.inview.min.js" type="text/javascript"></script>
+
     </body>
 </html>
 
