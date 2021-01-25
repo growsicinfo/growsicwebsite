@@ -274,6 +274,8 @@
     font-size: 2rem;
 }
 .contact-body{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     font-size: 3rem;
     font-weight: bold;
 }
