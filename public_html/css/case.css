@@ -157,6 +157,10 @@
 
 /* 採用情報 */
 
+#employarea {
+    padding-bottom: 10rem;
+    
+}
 #employarea .text-muted {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -187,4 +191,35 @@
 /* #welfarearea */
 #welfarearea {
     min-height: 50rem;
+}
+
+/* 記事ページのスペース*/
+#infoarea {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+
+#infoarea > div > h3 {    
+    padding-bottom: 3rem;
+    font-weight: bold;
+}
+
+#infoarea > div > p{
+    font-size: 1.8rem;
+}
+#infolistarea {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    
+}
+#infolistarea h3 {
+    margin-top: 0;
+}
+#infolistarea p {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #64bdd4;
+}
+
+#infolistarea .label{   
+    background-color: #64bdd4; /*theme color*/
 }

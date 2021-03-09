@@ -37,6 +37,11 @@ a:hover img {
   background-color: #83cadc;
 }
 
+/* テーマカラーの文字 */
+.color-theme{
+     color: #64bdd4;
+}
+
 /* ナビ */
 .navbar {
     padding-top: 10px;
@@ -146,3 +151,4 @@ footer{
     padding-bottom: 5rem;
     color: #757575;
 }
+
