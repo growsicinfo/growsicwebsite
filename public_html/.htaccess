@@ -1,0 +1,4 @@
+<Files ~ "\.(html|jpg|gif|png|css|js|pdf)$">
+Header add Pragma no-cache
+Header set Cache-Control no-cache
+</Files>
