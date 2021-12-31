@@ -122,8 +122,18 @@
 }
 
 #informationsecurityarea .table th,
-#informationsecurityarea .table td {
+#informationsecurityarea .table td,
+#infomationhumanrights .table th,
+#infomationhumanrights .table td
+{
   border:none;
+}
+
+#infomationhumanrights p.h{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 
