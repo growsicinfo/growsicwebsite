@@ -124,16 +124,25 @@
 #informationsecurityarea .table th,
 #informationsecurityarea .table td,
 #infomationhumanrights .table th,
-#infomationhumanrights .table td
+#infomationhumanrights .table td,
+#bribery .table th,
+#bribery .table td
 {
   border:none;
 }
 
-#infomationhumanrights p.h{
+#infomationhumanrights p.h,
+#bribery p.h{
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-weight: bold;
     font-size: 1.2em;
+}
+.h-1{
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+    font-size: 1em;    
 }
 
 

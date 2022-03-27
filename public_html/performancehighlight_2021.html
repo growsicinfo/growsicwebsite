@@ -12,36 +12,36 @@
         <link rel="icon" href="icon/favicon.ico">
         <link rel="apple-touch-icon" href="icon/favicon.png">
         <link href="css/bootstrap.bootswatch.paper.css" rel="stylesheet"/>
-        <link href="css/common.css?v=20220401" rel="stylesheet">
-        <link href="css/case.css?v=20220401" rel="stylesheet">
+        <link href="css/common.css?v=20220101" rel="stylesheet">
+        <link href="css/case.css?v=20220101" rel="stylesheet">
         <title>株式会社グロウエスアイシー</title>
     </head>
-    <body>
+    <body id="performancehighlight">
         <!-- ナビ -->
         <header class="container-fluid">
             <div class="container">
                 <div class="row">
                     <nav class="navbar navbar-default ">
                         <div class="navbar-header">
-                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headnav">
-                            <span class="sr-only">navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="hamburger-text">menu</span>
-                          </button>
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headnav">
+                                <span class="sr-only">navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="hamburger-text">menu</span>
+                            </button>
                             <a class="navbar-brand" href="index.html">
                                 <img src="img/svg/logo.svg" alt="Logo">
                             </a>
                         </div>
                         <div class="collapse navbar-collapse" id="headnav">
-                          <ul class="nav navbar-nav navbar-right">
-                          <!--<ul class="nav navbar-nav">-->
-                            <li><a href="company.html?v=20220401">会社概要</a></li>
-                            <li><a href="employ.html?v=20220401">採用情報</a></li>
-                            <li><a href="disclaimer.html?v=20220401">免責事項</a></li>
-                            <li><a href="index.html#maparea">アクセスマップ</a></li>
-                          </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <!--<ul class="nav navbar-nav">-->
+                                <li><a href="company.html?v=20220101">会社概要</a></li>
+                                <li><a href="employ.html?v=20220101">採用情報</a></li>
+                                <li><a href="disclaimer.html?v=20220101">免責事項</a></li>
+                                <li><a href="index.html#maparea">アクセスマップ</a></li>
+                            </ul>
                         </div>
                     </nav>
                 </div>
@@ -54,9 +54,10 @@
                     <div class="col-sm-12">
                         <ol class="breadcrumb">
                             <li>Home</li>
-                            <li>福利厚生</li>
+                            <li>会社概要</li>
+                            <li>業績ハイライト</li>
                         </ol>
-                        <h2>福利厚生</h2>
+                        <h2>業績ハイライト</h2>
                     </div>
                 </div>
             </div>
@@ -64,19 +65,75 @@
         <!--コンテンツ-->
         <div class="container-fluid">
             <div class="container">
-
-                <div class="row" id="welfarearea">
+                <div class="row">
                     <div class="col-sm-12">
                         <h3 class="sectionheading">
-                            福利厚生に関する事項
+                            平成29年度～令和2年度の業績ハイライト
                         </h3>
-                        <ul>
-                            <li>組合健康保険（関東ITソフトウェア健康保険組合）、厚生年金、雇用保険、労働保険</li>
-                            <li>年次有給休暇、慶弔休暇、年末年始休暇、定期健康診断（１回／年）</li>
-                        </ul>
                     </div>
                 </div>
-                    
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="">単位：千円</p>
+                        <div style="overflow-x:auto;">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>29年度</th>
+                                        <th>30年度</th>
+                                        <th>令和1年度</th>
+                                        <th>令和2年度</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            <i class="glyphicon glyphicon-signal" style="color:rgba(19, 51, 166, 0.5)"></i>
+                                            売上高
+                                        </th>
+                                        <td>1,180,075</td>
+                                        <td>1,088,262</td>
+                                        <td>1,102,999</td>
+                                        <td>1,114,223</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <i class="glyphicon glyphicon-signal" style="color:rgba(252, 220, 93, 0.5)"></i>
+                                            営業利益
+                                        </th>
+                                        <td>3,511</td>
+                                        <td>4,826</td>
+                                        <td>1,291</td>
+                                        <td>9,497</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <i class="glyphicon glyphicon-signal" style="color:rgba(100, 189, 212, 0.5)"></i>
+                                            経常利益
+                                        </th>
+                                        <td>4,580</td>
+                                        <td>6,456</td>
+                                        <td>4,326</td>
+                                        <td>10,127</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div><!--row-->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <canvas id="chart04" ></canvas>
+                    </div>
+                    <div class="col-sm-6">
+                        <canvas id="chart01" ></canvas>
+                    </div>
+                    <div class="col-sm-6">
+                        <canvas id="chart02" ></canvas>
+                    </div>
+                </div>
+
             </div>
         </div>
     <!--フッター-->
@@ -90,23 +147,23 @@
                                 <li>
                                     <p>
                                         <i class="glyphicon glyphicon-menu-right"></i>
-                                        <a class="" href="index.html?v=20220401">HOME</a>
+                                        <a class="" href="index.html?v=20220101">HOME</a>
                                     </p>
                                 </li>
                                 <li>
                                     <p>
                                         <i class="glyphicon glyphicon-menu-right"></i>
-                                        <a class="" href="company.html?v=20220401">会社概要</a>
+                                        <a class="" href="company.html?v=20220101">会社概要</a>
                                     </p>
                                     <ul>
                                         <li>会社概要</li>
-                                        <li><a href="performancehighlight.html?v=20220401">業績ハイライト</a></li>
+                                        <li><a href="performancehighlight.html?v=20220101">業績ハイライト</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <p>
                                         <i class="glyphicon glyphicon-menu-right"></i>
-                                        <a class="" href="employ.html?v=20220401">採用情報</a>
+                                        <a class="" href="employ.html?v=20220101">採用情報</a>
                                     </p>
                                     <ul>
                                         <li>新卒採用</li>
@@ -117,7 +174,7 @@
                                 <li>
                                     <p>
                                         <i class="glyphicon glyphicon-menu-right"></i>
-                                        <a class="" href="welfare.html?v=20220401">福利厚生</a>
+                                        <a class="" href="welfare.html?v=20220101">福利厚生</a>
                                     </p>
                                     <ul>
                                         <li>福利厚生</li>
@@ -126,14 +183,13 @@
                                 <li>
                                     <p>
                                         <i class="glyphicon glyphicon-menu-right"></i>
-                                        <a class="" href="disclaimer.html?v=20220401">免責事項</a>
+                                        <a class="" href="disclaimer.html?v=20220101">免責事項</a>
                                     </p>
                                     <ul>
-                                        <li><a href="disclaimer.html?v=20220401">免責事項</a></li>
+                                        <li><a href="disclaimer.html?v=20220101">免責事項</a></li>
                                         <li><a href="disclaimer.html#personalinformationarea">個人情報保護方針</a></li>
                                         <li><a href="disclaimer.html#informationsecurityarea">情報セキュリティ基本方針</a></li>
                                         <li><a href="disclaimer.html#infomationhumanrights">人権方針</a></li>
-                                        <li><a href="disclaimer.html#bribery">贈収賄防止基本方針</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -155,12 +211,12 @@
                     <div class="row">                        
                         <div class=" visible-xs">
                             <div id="footermenumobile" class="list-group">
-                                <a class="list-group-item" href="index.html?v=20220401">HOME</a>
-                                <a class="list-group-item" href="company.html?v=20220401">会社概要</a>
-                                <a class="list-group-item" href="performancehighlight.html?v=20220401">業績ハイライト</a>
-                                <a class="list-group-item" href="employ.html?v=20220401">採用情報</a>
-                                <a class="list-group-item" href="welfare.html?v=20220401">福利厚生</a>
-                                <a class="list-group-item" href="disclaimer.html?v=20220401">免責事項</a>
+                                <a class="list-group-item" href="index.html?v=20220101">HOME</a>
+                                <a class="list-group-item" href="company.html?v=20220101">会社概要</a>
+                                <a class="list-group-item" href="performancehighlight.html?v=20220101">業績ハイライト</a>
+                                <a class="list-group-item" href="employ.html?v=20220101">採用情報</a>
+                                <a class="list-group-item" href="welfare.html?v=20220101">福利厚生</a>
+                                <a class="list-group-item" href="disclaimer.html?v=20220101">免責事項</a>
                                 <a class="list-group-item" href="index.html#maparea">お問い合わせ/アクセス</a>
                                 <div class="list-group-item">
                                         <img src="img/svg/logo.white.svg" alt="Logo">
@@ -174,9 +230,13 @@
             </div>
         </footer>
 
-    <!-- include -->
-    <script src="jsplugin/jquery-1.10.2.min.js" type="text/javascript"></script>
-    <script src="jsplugin/bootstrap-3.3.6.min.js" type="text/javascript"></script>
+        <!-- include -->
+        <script src="jsplugin/jquery-1.10.2.min.js" type="text/javascript"></script>
+        <script src="jsplugin/bootstrap-3.3.6.min.js" type="text/javascript"></script>
+        <script src="jsplugin/Chart.min.js" type="text/javascript"></script>
+        <script src="js/performancehighlight.chart_2021.js" type="text/javascript"></script>
+        <script src="jsplugin/jquery.inview.min.js" type="text/javascript"></script>
+
     </body>
 </html>
 
