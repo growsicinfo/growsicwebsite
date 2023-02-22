@@ -108,6 +108,7 @@ footer{
 }
 #footermenu ul.list-inline > li > p{    
     margin-bottom: 0;
+    color: #9E9E9E;
 }
 #footermenu ul.list-inline > li > p > i.glyphicon{
     color: #757575;
@@ -152,3 +153,12 @@ footer{
     color: #757575;
 }
 
+.mb-1 {
+    margin-bottom: 1rem;
+}
+.mb-2 {
+    margin-bottom: 2rem;
+}
+.mb-3 {
+    margin-bottom: 3rem;
+}
