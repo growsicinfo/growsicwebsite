@@ -93,6 +93,7 @@ a:hover img {
 
 /* フッター */
 footer{
+    margin-top: 10rem;
     background-color: #212121;
 }
 #footermenu {
