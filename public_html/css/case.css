@@ -242,3 +242,19 @@
 #infolistarea .label{   
     background-color: #64bdd4; /*theme color*/
 }
+
+/* 環境目標 */
+
+#environmentalgoals .table {
+    table-layout: fixed;
+}
+
+@media (max-width: 640px) {
+    #environmentalgoals .table {
+        table-layout: auto;
+    }
+    #environmentalgoals .table-scroll {
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+}
