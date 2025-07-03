@@ -37,7 +37,7 @@ $(document).ready(function () {
           $(form).find('button[type="submit"]').prop('disabled', true);
         } else {
           $('#result').html('<div class="alert alert-danger">' + res.message + '</div>').fadeIn();
-          $(form).find('button[type="submit"]').prop('disabled', false);
+          $(form).find('button[type="submit"]').prop('disabled', true);
         }
       },
       error: function () {
