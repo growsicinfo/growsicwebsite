@@ -9,24 +9,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
-
-  <style>
-    html , body , .popover , .tooltip {
-      font-family: "Noto Serif JP", serif;
-    }
-    .was-validated .form-control:invalid,
-    .was-validated .form-select:invalid {
-      border-color: #dc3545;
-    }
-    .was-validated .form-control:valid {
-      border-color: #198754;
-    }
-    .custom-container {
-      max-width: 720px; /* 必要に応じて調整可 */
-      margin: 0 auto;
-    }
-
-  </style>
 </head>
 <body class="bg-light">
 
@@ -69,11 +51,17 @@
       </div>
 
       <div class="alert alert-warning mb-5 mt-3" role="alert">
-        ・ご入力いただいた個人情報は、お問い合わせ対応の目的以外では使用いたしません。<br><br>
+        ・営業・勧誘・提案等の目的でのご利用は固くお断りいたします。<br><br>
         ・ドメイン指定受信をされている方は「growsic.co.jp」からのメールを受信できるように設定してください。<br><br>
         ・お問い合わせの内容によっては、回答までに数日いただく場合がございます。<br><br>
         ・すべてのお問い合わせへの返信はお約束できかねますことを、ご理解いただけますようお願いいたします。
       </div>
+
+      <div class="d-none">
+        <label for="website">サイト名</label>
+        <input type="text" id="website" name="website" autocomplete="off">
+      </div>
+
 
       <div id="result" class="mt-3"></div>
       

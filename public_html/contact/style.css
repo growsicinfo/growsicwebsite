@@ -1,0 +1,14 @@
+    html , body , .popover , .tooltip {
+      font-family: "Noto Serif JP", serif;
+    }
+    .was-validated .form-control:invalid,
+    .was-validated .form-select:invalid {
+      border-color: #dc3545;
+    }
+    .was-validated .form-control:valid {
+      border-color: #198754;
+    }
+    .custom-container {
+      max-width: 720px; /* 必要に応じて調整可 */
+      margin: 0 auto;
+    }
