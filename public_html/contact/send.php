@@ -37,7 +37,7 @@ if (!$captchaSuccess->success) {
 $forbidden_words = [
     'M&A', '事業承継', '買収', '企業価値', '株式譲渡',
     'SEO', 'ヘッドハンティング','提案', '業務提携',
-    'セールス', '事業成長', '商談', '助成金', '補助金'
+    'セールス', '事業成長', '商談', '助成金', '補助金','御協業','ビジネスパートナー'
 ];
 
 // フォームから受け取るメッセージ
@@ -57,6 +57,13 @@ if (!preg_match('/[\p{Hiragana}\p{Katakana}\p{Han}]/u', $message)) {
     echo json_encode(['success' => false, 'message' => '日本語のみ対応しております。']);
     exit;
 }
+
+// URLが含まれているかチェック
+if (preg_match('/https?:\/\/[\w\-\.]+\.[a-z]{2,}(\/\S*)?/i', $message)) {
+    echo json_encode(['success' => false, 'message' => 'URLの入力はご遠慮ください。']);
+    exit;
+}
+
 
 // メール送信処理
 $name = htmlspecialchars($_POST['name'], ENT_QUOTES);
